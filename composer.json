@@ -1,0 +1,9 @@
+{
+    "require": {
+        "2amigos/qrcode-library": "~1.1",
+        "org_heigl/ghostscript": "^2.3",
+        "calcinai/php-imagick": "^0.1.2",
+        "dompdf/dompdf": "^1.2",
+        "mpdf/mpdf": "^8.0"
+    }
+}
