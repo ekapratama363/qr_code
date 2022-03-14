@@ -21,7 +21,6 @@ $qrCode->writeFile(__DIR__ . '/code.png'); // writer defaults to PNG when none i
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unduh QR</title>
     <style>
-
         body {
             background-color: #e5e5e5;
             font-family: sans-serif;
@@ -31,43 +30,47 @@ $qrCode->writeFile(__DIR__ . '/code.png'); // writer defaults to PNG when none i
             background-image: url("./bg.png");
             background-repeat: no-repeat;
             background-size: cover;
-            height: 500px;
+            height: 640px;
             position: relative;
             width: 500px;
-        }
-
-        .qr-code {
-            margin-left: 158px;
-            margin-top: 145px;
-            width: 200px;
-        }
-
-        .table-number {
-            margin-left: 300px;
-            margin-top: 65px;
-            text-align: center;
-        }
-
-        .table-number .floor {
-            margin: 0;
-            font-size: 20px;
-        }
-
-        .table-number .number {
-            margin: 0;
-            line-height: 55px;
-            font-size: 65px;
         }
     </style>
 </head>
 
 <body>
     <section class="wrapper">
-        <img class="qr-code" src="<?= $qrCode->writeDataUri(); ?>" alt="qr code" />
-        <div class="table-number">
-            <p class="floor">OUTDOOR</p>
-            <p class="number">01</p>
-        </div>
+        <table width="500px">
+            <tr>
+                <td style="height: 165px;"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <div class="qr-wrapper">
+                        <img style="width: 210px; padding: 30px;" src="<?= $qrCode->writeDataUri(); ?>" alt="qr code" />
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="height: 60px"></td>
+            </tr>
+            <tr>
+                <td style="text-align: center; padding-left: 20px;">
+                    <h2 style="font-size: 100px;">01</h2>
+                </td>
+                <td style="width: 400px; padding-left: 20px; height: 170px">
+                    <table>
+                        <tr>
+                            <td style="font-size: 25px; padding-bottom: 20px; color: #00B7B5">OUTDOOR</td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 23px; padding-right: 20px">MEJA 1 - DEKAT JENDELA UTAMA</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
     </section>
 </body>
 
