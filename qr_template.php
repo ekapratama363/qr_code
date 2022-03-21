@@ -41,31 +41,26 @@ $qrCode->writeFile(__DIR__ . '/code.png'); // writer defaults to PNG when none i
     <section class="wrapper">
         <table width="500px">
             <tr>
-                <td style="height: 165px;"></td>
+                <td style="height: 137px;"></td>
             </tr>
             <tr>
-                <td></td>
                 <td>
                     <div class="qr-wrapper">
-                        <img style="width: 210px; padding: 30px;" src="<?= $qrCode->writeDataUri(); ?>" alt="qr code" />
+                        <img style="width: 210px; margin-left: 120px; padding: 30px;" src="<?= $qrCode->writeDataUri(); ?>" alt="qr code" />
                     </div>
                 </td>
-                <td></td>
             </tr>
             <tr>
-                <td style="height: 60px"></td>
+                <td style="height: 40px"></td>
             </tr>
             <tr>
-                <td style="text-align: center; padding-left: 20px;">
-                    <h2 style="font-size: 100px;">01</h2>
-                </td>
-                <td style="width: 400px; padding-left: 20px; height: 170px">
+                <td style="width: 500px; padding-left: 30px; height: 160px;">
                     <table>
                         <tr>
-                            <td style="font-size: 25px; padding-bottom: 20px; color: #00B7B5">OUTDOOR</td>
+                            <td style="font-size: 25px; padding-bottom: 10px; padding-right: 30px; color: #00B7B5">lantai asixxxx</td>
                         </tr>
                         <tr>
-                            <td style="font-size: 23px; padding-right: 20px">MEJA 1 - DEKAT JENDELA UTAMA</td>
+                            <td style="font-size: 23px; padding-right: 30px">Meja makan9939182091029101</td>
                         </tr>
                     </table>
                 </td>
